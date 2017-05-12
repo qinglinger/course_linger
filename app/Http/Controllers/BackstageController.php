@@ -28,6 +28,6 @@ class BackstageController extends Controller
             "posts" => $query
         ];
 
-        return view('backstage', $data);
+        return view('backstage/course', $data);
     }
 }

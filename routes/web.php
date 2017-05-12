@@ -28,3 +28,4 @@ Route::get('/home', function () {
 });
 
 Route::get('/backstage', "BackstageController@showUser");
+Route::get('/backstage/course', "BackstageController@showCourse");
