@@ -18,7 +18,7 @@ class BackstageController extends Controller
             "posts" => $query
         ];
 
-        return view('backstage/backstage', $data);
+        return view('backstage/user', $data);
     }
 
     public function showCourse(Request $request){

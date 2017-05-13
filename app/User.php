@@ -12,11 +12,11 @@ class User extends Model
     protected $primaryKey = "id";
     protected $casts = ["id" => "INT"];
 
-    protected $username = 'userName';
+    protected $userName = 'userName';
     protected $userID = 'userID';
     protected $password = 'password';
     protected $gender = 'gender';
     protected $identity = 'indentity';
 
-//    protected $fillable = ['userID', 'userName', 'password', 'gender', 'identity'];
+    protected $fillable = ['userName', 'password', 'gender', 'identity'];
 }

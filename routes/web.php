@@ -27,5 +27,11 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/backstage', "BackstageController@showUser");
+Route::get('/backstage/user', "BackstageController@showUser");
 Route::get('/backstage/course', "BackstageController@showCourse");
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::post('/registerHandle', "LogController@registerHandle");
